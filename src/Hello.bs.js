@@ -3,7 +3,7 @@
 import * as React from "react";
 
 function Hello(Props) {
-  return React.createElement("div", undefined, String("\xd7\x91\xd7\xa8\xd7\x95\xd7\x9b\xd7\x99\xd7\x9d \xd7\x94\xd7\x91\xd7\x90\xd7\x99\xd7\x9d!"));
+  return React.createElement("div", undefined, String("ברוכים הבאים!"));
 }
 
 var make = Hello;
