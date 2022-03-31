@@ -1837,6 +1837,11 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
+"@rescript/react@^0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@rescript/react/-/react-0.10.3.tgz#a2a8bed6b017940ec26c2154764b350f50348889"
+  integrity sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
