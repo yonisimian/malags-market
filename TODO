@@ -1,0 +1,13 @@
+Functionality:
+    - Show courses that students wanna take
+    - Make form's days multiple select (react-select)
+    - 
+    - Add verifications
+    - Add authentication
+    - Add Sorting
+    - Add Filtering
+
+Visibility:
+    - Make compatible for phones
+    - Add bootstrap (react-bootstrap)
+    - Add animations? (framer-motion)

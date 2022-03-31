@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Main from './components/Main'
+import Login from './components/Login'
+import { signOut } from 'firebase/auth'
+import { auth } from './firebase'
 
 function App() {
+  const [isAuth, setIsAuth] = useState(false)
+  const signUserOut = () => {
+    signOut(auth).then(() => {
+      localStorage.clear()
+      setIsAuth(false)
+    })
+  }
+
+  useEffect(() => {
+    if (localStorage['isAuth'])
+      setIsAuth(true)
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header isAuth={isAuth} signUserOut={signUserOut} />
+      {isAuth ? <Main /> : <Login setIsAuth={setIsAuth}/>}
+      <Footer />
     </div>
   );
 }
