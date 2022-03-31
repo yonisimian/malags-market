@@ -6,6 +6,7 @@ import Main from './components/Main'
 import Login from './components/Login'
 import { signOut } from 'firebase/auth'
 import { auth } from './firebase'
+import Hello from "./Hello.bs"
 
 function App() {
   const [isAuth, setIsAuth] = useState(false)
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <Header isAuth={isAuth} signUserOut={signUserOut} />
+      <Hello />
       {isAuth ? <Main /> : <Login setIsAuth={setIsAuth}/>}
       <Footer />
     </div>
